@@ -1,0 +1,90 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "font-converter",
+  "title": "Font Converter",
+  "description": "Convert fonts to TTF, WOFF, WOFF2, and EOT formats directly from Raycast",
+  "icon": "extension-icon.png",
+  "author": "almatkai",
+  "contributors": [
+    "ridemountainpig"
+  ],
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Design Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "convert-font",
+      "title": "Convert Font",
+      "subtitle": "Font Converter",
+      "description": "Convert a font file into one or more formats.",
+      "mode": "view",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ]
+    },
+    {
+      "name": "generate-font-face-css",
+      "title": "Generate @Font-Face CSS",
+      "subtitle": "Font Converter",
+      "description": "Generate a CSS snippet for the converted font files.",
+      "mode": "no-view",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ]
+    },
+    {
+      "name": "preview-font",
+      "title": "Preview Font",
+      "subtitle": "Font Converter",
+      "description": "Preview any installed or custom font.",
+      "mode": "view",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.1",
+    "@raycast/utils": "^2.2.5",
+    "fonteditor-core": "^2.6.3",
+    "fontverter": "^2.0.0",
+    "opentype.js": "^1.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "id": "com.tezbar.font-converter",
+  "version": "0.1.0",
+  "tezbar": {
+    "schemaVersion": 1,
+    "platforms": [
+      "macos",
+      "windows"
+    ],
+    "linuxStatus": "coming-soon",
+    "repository": "https://github.com/almatkai/font-converter",
+    "upstream": {
+      "repository": "https://github.com/raycast/extensions",
+      "path": "extensions/font-converter",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a"
+    }
+  }
+}
