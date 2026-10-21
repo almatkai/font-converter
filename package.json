@@ -3,7 +3,7 @@
   "name": "font-converter",
   "title": "Font Converter",
   "description": "Convert fonts to TTF, WOFF, WOFF2, and EOT formats directly from Raycast",
-  "icon": "extension-icon.png",
+  "icon": "assets/extension-icon.png",
   "author": "almatkai",
   "contributors": [
     "ridemountainpig"
